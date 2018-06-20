@@ -1,12 +1,14 @@
 package steps;
 
+import static org.junit.Assert.assertThat;
+
 import net.thucydides.core.annotations.Step;
 import pages.ExitoHomePage;
-import pages.ResultadoBusquedaPage;
+//import pages.ResultadoBusquedaPage;
 
 public class BuscarSteps {
   ExitoHomePage exitoHomePage;
-  ResultadoBusquedaPage resultadoBusquedaPage;
+  //ResultadoBusquedaPage resultadoBusquedaPage;
 
   @Step
   public void abrirPaginaBusqueda() {
@@ -15,12 +17,13 @@ public class BuscarSteps {
 
   @Step
   public void realizarBusquedaPorPalabraEspecifica(String articuloABuscar) {
-    exitoHomePage.ingresarArticuloABuscar(articuloABuscar);
-    exitoHomePage.buscarPorArticulo();
+    //exitoHomePage.ingresarArticuloABuscar(articuloABuscar);
+    //exitoHomePage.buscarPorArticulo();
   }
 
   @Step
   public void verResultadosBusqueda() {
+	  //assertThat();
    
   }
 }

@@ -17,6 +17,9 @@ import steps.BuscarSteps;
 @RunWith(SerenityRunner.class)
 public class SearchByKeywordTest {
 
+	@Managed(driver ="chrome")
+	WebDriver driver;
+	
 	Productos producto;
 
   @Steps
